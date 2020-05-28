@@ -1,0 +1,293 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
+
+#topo{
+    background-color: #66999b;
+    height: 30px;
+}
+
+#topo ul{
+    list-style: none;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+#topo li{
+    float: right;
+    display: inline;
+    padding: 5px 10px 0px 10px;
+}
+
+#topo a{
+    font-family: 'Karla', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.15px;
+}
+
+
+#menu{
+    width: 100%;
+    height: 50px;
+}
+
+#menu img{
+    width: 100%;
+}
+
+#menu ul{
+    list-style: none;
+    position: relative;    
+}
+
+#menu ul li{
+    width: 20%;
+    float: left;
+}
+
+#menu p{
+    padding: 28px;
+    font-family: 'Karla', sans-serif;
+}
+
+#menu a{
+    padding: 15px;
+    font-family: 'Karla', sans-serif;
+}
+
+#menu a, #menu p{
+    border-left: solid;
+    border-right: solid;
+    border-width: 1px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #ffffff;
+    color: #252627;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#menu ul ul{
+    border-top: solid;
+    border-width: 1px;
+    position: absolute;
+    visibility: hidden;
+    width: 20%;
+    z-index: 9999;
+}
+
+#menu ul li:hover ul{
+    visibility: visible;
+}
+
+#menu a:hover{
+    color: #314274;;
+}
+
+#menu ul ul li{
+    float: left;
+    border-bottom: solid 1px rgb(0, 0, 0);
+    width: 100%;
+}
+
+#menu ul ul li a{
+    background-color: #fafafa;
+    color: #252627;
+}
+
+@media(max-width: 520px){
+    #menu ul li{
+        width: 100%;
+        float: none;
+    }
+
+    #menu ul ul{
+        width: 100%;
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 0.3s;
+    }
+
+    #menu ul li:hover ul{
+        height: auto;
+        max-height: 300px;
+    }
+}
+
+.carousel-container{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-slide{
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+#prevBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 2%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#nextBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 2%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#materia1 {
+    margin: 0px auto 60px auto;
+    width: 90%;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 2px#496a81;
+    background-color: #fafafa;
+}
+
+#materia1 h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    padding: 5px 0px 5px 0px;
+    color: #fafafa;
+    font-family: 'Cairo', sans-serif;
+    background-color: #496a81;
+}
+
+#materia1 a{
+    text-decoration: none;
+    color: #d1beb0;
+    font-family: 'Crimson Text', serif;
+    transition: ease-in 0.5s;
+    cursor: pointer;
+    color: #d1beb0;
+}
+
+#materia1 a:hover{
+    background-color: #496a81;
+    color: white;
+}
+
+#materia1 figure{
+    float: left;
+    margin: 10px 20px 10px 10px;
+    box-shadow: 0px 0px 1px #496a81;
+
+}
+
+#materia1 figcaption{
+    text-align: center;
+    width: 500px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 12px;
+
+}
+
+#materia1 p{
+    text-indent: 25px;
+    text-align: justify;
+    line-height: 25px;
+    padding: 0px 25px 0px 25px;
+    font-family: 'Lucida Sans unicode', 'Lucida Grande', sans-serif;
+}
+
+#titulo-cima h1, #titulo-baixo h1{
+    margin-top: 25px;
+    font-family: 'Karla', sans-serif;
+}
+
+#titulo-cima h1{
+    float: left;    
+    width: 5%;
+    margin: 10px;
+    text-transform: uppercase;
+    
+}
+
+#titulo-baixo h1{
+    float: left;
+    width: 5%;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.grade-cima, .grade-baixo   {
+    margin-left: 200px
+}
+
+.grade-baixo{
+    margin-bottom: 550px;
+}
+
+.grade1, .grade2, .grade3, .grade4, .grade5, .grade6{
+    float: left;
+    margin: 10px;
+    transition: all .2s ease-in-out;
+    display:block;
+    cursor:pointer;
+    overflow:hidden;
+}   
+
+.grade1 h2, .grade2 h2, .grade3 h2, .grade4 h2, .grade5 h2, .grade6 h2{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.grade1:hover, .grade2:hover, .grade3:hover, .grade4:hover, .grade5:hover, .grade6:hover{ 
+    transform: scale(1.1); 
+}
+
+#retorno img{
+    float: right;
+    position: sticky;
+    margin: auto;
+    background-color: white;
+    border-radius: 50%;
+    border: solid 0.5px #496a81;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+#retorno img:hover{
+    transform: translateY(-10px);
+}
+
+footer{
+    background-color: #66999b;
+    height: 100px;
+    margin: 0px;
+}
+
+#logo{
+    width: 320px;
+    height: 71px;
+    margin: 0px auto 0px auto;
+}
+
+#cred h6{
+    color: white;
+    margin: 10px auto 0px auto;
+    width: 180px;    
+    font-family: 'Karla', sans-serif;
+}

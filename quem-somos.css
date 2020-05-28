@@ -1,0 +1,186 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
+#topo{
+    background-color: #66999b;
+    height: 30px;
+}
+
+#topo ul{
+    list-style: none;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+#topo li{
+    float: right;
+    display: inline;
+    padding: 5px 10px 0px 10px;
+}
+
+#topo a{
+    font-family: 'Karla', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.15px;
+}
+
+
+#menu{
+    width: 100%;
+    height: 50px;
+}
+
+#menu ul{
+    list-style: none;
+    position: relative;    
+}
+
+#menu ul li{
+    width: 20%;
+    float: left;
+}
+
+#menu p{
+    padding: 28px;
+    font-family: 'Karla', sans-serif;
+}
+
+#menu a{
+    padding: 15px;
+    font-family: 'Karla', sans-serif;
+}
+
+#menu a, #menu p{
+    border-left: solid;
+    border-right: solid;
+    border-width: 1px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #ffffff;
+    color: #252627;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#menu ul ul{
+    border-top: solid;
+    border-width: 1px;
+    position: absolute;
+    visibility: hidden;
+    width: 20%;
+    z-index: 9999px;
+}
+
+#menu ul li:hover ul{
+    visibility: visible;
+}
+
+#menu a:hover{
+    color: #314274;;
+}
+
+#menu ul ul li{
+    float: left;
+    border-bottom: solid 1px rgb(0, 0, 0);
+    width: 100%;
+}
+
+#menu ul ul li a{
+    background-color: #fafafa;
+    color: #252627;
+}
+
+@media(max-width: 520px){
+    #menu ul li{
+        width: 100%;
+        float: none;
+    }
+
+    #menu ul ul{
+        width: 100%;
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 0.3s;
+    }
+
+    #menu ul li:hover ul{
+        height: auto;
+        max-height: 300px;
+    }
+}
+
+#local{
+    font-size: 12px;
+    padding: 10px 0px 10px 80px;
+    background-color: #fafafa;
+    margin: 50px 0px 50px 0px;
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+}
+
+#quem-somos{
+    margin: 0px auto 120px auto;
+    width: 85%;
+}
+
+#quem-somos-img {
+    float: left;
+    margin: 100px 60px 100px 0px;
+}
+
+#quem-somos-txt {
+    padding: 50px 0px 0px 0px;
+    font-family: 'Karla', sans-serif;
+    
+}
+
+#quem-somos-txt p{
+    padding: 0px 30px 10px 0px;
+    text-align: justify;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 20px;
+    
+    }
+
+#quem-somos-txt h1{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 10px;
+    color: #b49986;
+    font-size: 35px;
+   font-family:'Lucida Sans unicode', 'Lucida Grande', sans-serif;
+  }
+    
+
+footer{
+    background-color: #66999b;
+    height: 100px;
+    margin: 0px;
+}
+
+#logo{
+    width: 320px;
+    height: 71px;
+    margin: 0px auto 0px auto;
+}
+
+#cred h6{
+    color: white;
+    margin: 0px auto 0px auto;
+    width: 180px;    
+}

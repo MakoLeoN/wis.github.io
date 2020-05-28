@@ -1,0 +1,184 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{font-family: 'Lucida Sans unicode', 'Lucida Grande', sans-serif;}
+
+#topo{
+    background-color: #66999b;
+    height: 30px;
+}
+
+#topo ul{
+    list-style: none;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+#topo li{
+    float: right;
+    display: inline;
+    padding: 5px 10px 0px 10px;
+}
+
+#topo a{
+    font-family: 'Karla', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.15px;
+}
+
+
+#menu{
+    width: 100%;
+    height: 50px;
+}
+
+#menu img{
+    width: 100%;
+}
+
+#menu ul{
+    list-style: none;
+    position: relative;    
+}
+
+#menu ul li{
+    width: 20%;
+    float: left;
+}
+
+#menu p{
+    padding: 28px;
+    font-family: 'Karla', sans-serif;
+}
+
+#menu a{
+    padding: 15px;
+    font-family: 'Karla', sans-serif;
+}
+
+#menu a, #menu p{
+    border-left: solid;
+    border-right: solid;
+    border-width: 1px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #ffffff;
+    color: #252627;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#menu ul ul{
+    border-top: solid;
+    border-width: 1px;
+    position: absolute;
+    visibility: hidden;
+    width: 20%;
+    z-index: 9999px;
+}
+
+#menu ul li:hover ul{
+    visibility: visible;
+}
+
+#menu a:hover{
+    color: #314274;;
+}
+
+#menu ul ul li{
+    float: left;
+    border-bottom: solid 1px rgb(0, 0, 0);
+    width: 100%;
+}
+
+#menu ul ul li a{
+    background-color: #fafafa;
+    color: #252627;
+}
+
+@media(max-width: 520px){
+    #menu ul li{
+        width: 100%;
+        float: none;
+    }
+
+    #menu ul ul{
+        width: 100%;
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 0.3s;
+    }
+
+    #menu ul li:hover ul{
+        height: auto;
+        max-height: 300px;
+    }
+}    
+
+
+
+
+
+    h1 {text-align: center;}
+     
+    figure#Trot { left: 550px;
+        float: left;
+        margin:10px 0 0 10px;}
+
+
+    figcaption#Trot {text-align: center;}
+        
+    
+    p {text-indent: 25px;
+        text-align: justify;
+        line-height: 25px;
+        padding: 0px 25px 0px 25px}    
+    
+    h2,h3 {text-align: left;
+        line-height: 25px;
+        padding: 0px 25px 0px 25px;}   
+
+
+
+
+
+
+        #retorno img{
+            float: right;
+            position: sticky;
+            margin: auto;
+            background-color: white;
+            border-radius: 50%;
+            border: solid 0.5px #496a81;
+            transition: all 0.1s linear;
+            cursor: pointer;
+        }
+        
+        #retorno img:hover{
+            transform: translateY(-10px);
+        }
+        
+        footer{
+            background-color: #66999b;
+            height: 100px;
+            margin: 0px;
+        }
+        
+        #logo{
+            width: 320px;
+            height: 71px;
+            margin: 0px auto 0px auto;
+        }
+        
+        #cred h6{
+            color: white;
+            margin: 0px auto 0px auto;
+            width: 180px;    
+            font-family: 'Karla', sans-serif;
+        }
